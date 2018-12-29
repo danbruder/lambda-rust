@@ -23,7 +23,7 @@ cd "$CARGO_TARGET_DIR"/release
         # note: would use printf "@ $(basename $file)\n@=bootstrap" | zipnote -w "$file.zip"
         # if not for https://bugs.launchpad.net/ubuntu/+source/zip/+bug/519611
         mv "$file" bootstrap
-        zip "$file.zip" bootstrap
+        zip "$file.zip" bootstrap ../../../libmysqlclient.so.1018
         rm bootstrap
     done
 ) 1>&2

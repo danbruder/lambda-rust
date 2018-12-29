@@ -1,6 +1,6 @@
 VERSION ?= 0.2.0
 RUST_VERSION ?= 1.31.0
-REPO ?= softprops/lambda-rust
+REPO ?= danbruder/lambda-rust
 TAG ?= "$(REPO):$(VERSION)-rust-$(RUST_VERSION)"
 
 publish: build
